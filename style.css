@@ -1,0 +1,61 @@
+*:before,
+*:after,
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  width: 100%;
+}
+
+figurecaption {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+}
+
+.wrapper .score .main {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  text-align: center;
+}
+
+.wrapper .result-pick {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.wrapper .choose-hand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.hand {
+  border: none;
+  padding: 1em 2em;
+  margin: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
+}
+
+.hand:hover {
+  background-color: darkgray;
+}
